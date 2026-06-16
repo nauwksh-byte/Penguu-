@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-fun: "Fredoka", sans-serif;
+
+  --color-brand-cream: #FAF8F5;
+  --color-brand-cream-dark: #F3EFE9;
+  --color-brand-blue: #E8F0F8;
+  --color-brand-blue-text: #6082A3;
+  --color-brand-blue-border: #D3E4F4;
+  --color-brand-sage: #E8EDE4;
+  --color-brand-sage-text: #697F61;
+  --color-brand-sage-border: #D2DEC9;
+  --color-brand-brown: #F6EEE4;
+  --color-brand-brown-text: #967C65;
+  --color-brand-brown-border: #E8DAC8;
+}
+
+/* Custom styling for cozy transitions */
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF8F5;
+}
+
+body {
+  color: #4A4238;
+}
+
+/* Card glass aesthetics */
+.pastel-card {
+  backdrop-filter: blur(8px);
+}
+
+/* Cute shaking bounce for errors */
+@keyframes cuteShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  45%, 80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: cuteShake 0.45s ease-in-out;
+}
